@@ -3,67 +3,126 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Qase Test Cases</title>
+    <title>QA Engineer Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
-            color: #333;
-            margin: 20px;
-            padding: 0;
-        }
-        h1, h2 {
+            font-family: "Arial", sans-serif;
+            background-color: #ecf0f1;
             color: #2c3e50;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
         }
         .container {
+            background: #ffffff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
             max-width: 800px;
-            margin: 0 auto;
+            width: 100%;
+            text-align: center;
         }
-        ul {
+        h1 {
+            color: #e74c3c;
+            font-size: 32px;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #3498db;
+            font-size: 24px;
+            margin-top: 20px;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .section {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border-radius: 5px;
+        }
+        .projects ul, .skills ul, .checklists ul {
             padding: 0;
             list-style-type: none;
         }
-        li {
+        .projects li, .skills li, .checklists li {
             background: #ecf0f1;
-            margin-bottom: 10px;
-            padding: 10px;
+            margin: 10px 0;
+            padding: 12px;
             border-radius: 5px;
         }
-        a {
+        .button {
+            display: inline-block;
+            background-color: #3498db;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
             text-decoration: none;
-            color: #3498db;
             font-weight: bold;
+            transition: background 0.3s;
         }
-        a:hover {
-            color: #2980b9;
+        .button:hover {
+            background-color: #2980b9;
+        }
+        .contact-links {
+            font-size: 18px;
+            font-weight: bold;
+            color: #e74c3c;
+        }
+        .contact-links a {
+            text-decoration: none;
+            color: #e74c3c;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        .contact-links a:hover {
+            color: #c0392b;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>🧪 Qase Test Cases</h1>
-        <p>Проект содержит тесты из Qase в виде PDF и автоматизированные тесты на Java.</p>
-
-        <h2>📂 Ручные тесты:</h2>
-        <ul>
-            <li><a href=".\manual_tests\TEST-2025-03-13.pdf" download>Test Case 1</a></li>
-        </ul>
-
-        <!-- <h2>⚙️ Автоматизированные тесты:</h2>
-        <ul>
-            <li><a href="./automated_tests/LoginTest.java" download>Login Test</a></li>
-            <li><a href="./automated_tests/CheckoutTest.java" download>Checkout Test</a></li>
-        </ul> -->
-
-        <h2>🚀 Как использовать:</h2>
-        <p>1. Скачайте нужный файл.<br>
-           2. Выполните тесты вручную или запустите автотесты через командную строку.</p>
+        <h1>👨‍💻 QA Engineer Portfolio</h1>
         
-        <h2>👤 Контакты:</h2>
-        <p>
-            <a href="https://github.com/nafiginm" target="_blank">GitHub</a> | 
-            <!-- <a href="https://www.linkedin.com/in/username" target="_blank">LinkedIn</a> -->
-        </p>
+        <div class="section about">
+            <h2>🙋‍♂️ Обо мне</h2>
+            <p>Я тестировщик с опытом в ручном тестировании. Умею находить баги, улучшать пользовательский опыт и писать четкие тест-кейсы.</p>
+        </div>
+
+        <div class="section projects">
+            <h2>📂 Проекты</h2>
+            <ul>
+                <li>📝 <strong>Тест-кейсы</strong>: <a _blank href="https://drive.google.com/file/d/1pqmcK00C_ZdwHrWCTUE9NM63Ru_EoG7m/view?usp=drive_link" class="button" target="_blank">Скачать</a></li>
+                <li>🐞 <strong>Баг-репорты</strong>: <a href="https://docs.google.com/document/d/1LTte0G0xDCFUKe3c9F6aZ1Z6uwvJ3etSQVupfkU2IpI/edit?usp=drive_link" class="button" target="_blank">Скачать</a></li>
+                <li>📋 <strong>Чек-листы</strong>: <a href="https://docs.google.com/spreadsheets/d/1VZB9V4PQqueaZ74tP1PMQ5M3kUOuFtyZ/edit?usp=drive_link&ouid=115615909308508784280&rtpof=true&sd=true" class="button" target="_blank">Скачать</a></li>
+                <li>⚙️ <strong>Автоматизированные тесты</strong>: <a href="#" class="button">Смотреть код</a></li>
+            </ul>
+        </div>
+        
+        <div class="section skills">
+            <h2>🛠️ Навыки</h2>
+            <ul>
+                <li>✅ Ручное тестирование (Functional, UI, Regression)</li>
+                <li>✅ Автоматизированное тестирование (Java, Selenium, JUnit)</li>
+                <li>✅ Работа с баг-трекинговыми системами (Jira, Qase, TestRail)</li>
+                <li>✅ API тестирование (Postman, REST Assured)</li>
+            </ul>
+        </div>
+        
+        <div class="section contact">
+            <h2>📬 Контакты</h2>
+            <p class="contact-links">
+                📧 <a href="mailto:nafiginmarat@yandex.ru" target="_blank">nafiginmarat@yandex.ru</a>
+            </p>
+            <p class="contact-links">
+                <a href="https://github.com/nafiginm" target="_blank">🐙 GitHub</a>
+            </p>
+        </div>
     </div>
 </body>
 </html>
